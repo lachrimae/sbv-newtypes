@@ -26,6 +26,7 @@ formula = do
     y :: SInteger <- exists "y"
     w :: SMetres <- exists "length"
     constrain $ x .< (literal 13)
+    constrain $ w .< (literal $ Metres 13)
     return $ (literal 3) * x + 4 * y .== (literal 0)
 
 main :: IO ()
