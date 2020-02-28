@@ -18,12 +18,6 @@ deriving instance SIntegral Metres
 deriving instance SatModel Metres
 deriving instance IEEEFloatConvertible Metres
 
---instance IEEEFloatConvertableMetres where
-    --fromSFloat = genericFromFloat
-    --fromSDouble m sf    = undefined
-    --toSFloat m a  = undefined
-    --toSDouble m a = undefined
-
 type SMetres  = SBV Metres
 
 formula :: Symbolic SBool
