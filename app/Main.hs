@@ -25,10 +25,7 @@ formula = do
     x :: SInteger <- exists "x"
     y :: SInteger <- exists "y"
     w :: SMetres <- exists "length"
-    -- Exponents must be unsigned words
-    -- Exponents must be unsigned words
     constrain $ x .< (literal 13)
-    constrain $ w .< ((literal $ Metres 13) :: SMetres)
     return $ (literal 3) * x + 4 * y .== (literal 0)
 
 main :: IO ()
